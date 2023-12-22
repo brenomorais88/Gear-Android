@@ -3,4 +3,8 @@
     <string name="home">Home</string>
     <string name="garage">Garage</string>
     <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="my_favorites">My favorites</string>
+    <string name="make_announcement">Make announcement</string>
+    <string name="my_annoucement">My announcement</string>
 </resources>
