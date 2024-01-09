@@ -5,5 +5,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_f6f6f7">#F6F6F7</color>
-    <color name="greyscale_dark">#1A202C</color>
+    <color name="color_1a202c">#1A202C</color>
+    <color name="color_e1e1e1">#E1E1E1</color>
+    <color name="color_909090">#909090</color>
 </resources>

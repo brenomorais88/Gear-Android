@@ -76,12 +76,12 @@
             android:layout_height="1dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/card_banner"
-            app:layout_constraintBottom_toBottomOf="@+id/card_banner"
+            app:layout_constraintTop_toTopOf="@+id/cardBanner"
+            app:layout_constraintBottom_toBottomOf="@+id/cardBanner"
             />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_banner"
+            android:id="@+id/cardBanner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:elevation="15dp"
@@ -110,17 +110,18 @@
             android:id="@+id/usernameTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/card_banner"
+            app:layout_constraintTop_toBottomOf="@+id/cardBanner"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@color/greyscale_dark"
+            android:textColor="@color/color_1a202c"
             tools:text="Olá, Kleyton!"
             />
 
         <include
+            android:id="@+id/includeCardHome"
             layout="@layout/home_card_menu"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"

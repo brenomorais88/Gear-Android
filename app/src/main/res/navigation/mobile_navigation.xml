@@ -3,13 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/homeFragment">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/homeFragment"
         android:name="com.bit2b.gear.ui.home.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_searchListActivity"
+            app:destination="@id/searchListActivity" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +26,11 @@
         android:name="com.bit2b.gear.ui.notifications.NotificationsFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_notifications" />
+
+    <activity
+        android:id="@+id/searchListActivity"
+        android:name="com.bit2b.gear.SearchListActivity"
+        android:label="SearchListActivity"
+        tools:layout="@layout/activity_search_list"
+        />
 </navigation>
