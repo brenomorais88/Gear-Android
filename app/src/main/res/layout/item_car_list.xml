@@ -6,18 +6,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg_color_f6f6f7_corner"
     android:paddingBottom="16dp"
+    android:layout_marginBottom="15dp"
     >
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/itemCarListImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_color_f6f6f7_corner"
+        android:layout_margin="6dp"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/bg_color_f6f6f7_corner"
-        android:layout_margin="6dp"
-        android:scaleType="fitXY"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
         app:srcCompat="@drawable/bravo"/>
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -42,6 +44,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@color/color_1a202c"
+        android:text="Fiat Bravo T-jet 1.4 V8"
         tools:text="Fiat Bravo T-jet 1.4 V8"
         />
 
@@ -58,6 +61,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@color/color_b70000"
+        android:text="R$ 670.000,00"
         tools:text="R$ 670.000,00"
         />
 
@@ -96,6 +100,7 @@
         app:layout_constraintTop_toTopOf="@+id/itemCarListKmIcon"
         app:layout_constraintBottom_toBottomOf="@+id/itemCarListKmIcon"
         tools:text="65.000km"
+        android:text="65.000km"
         />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/itemCarListYearContain"
@@ -130,6 +135,7 @@
             app:layout_constraintTop_toTopOf="@+id/itemCarListYearIcon"
             app:layout_constraintBottom_toBottomOf="@+id/itemCarListYearIcon"
             tools:text="2016/2016"
+            android:text="2016/2016"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -159,6 +165,7 @@
         app:layout_constraintEnd_toEndOf="@id/viewDivider"
         app:layout_constraintTop_toTopOf="@+id/itemCarListLocationIcon"
         app:layout_constraintBottom_toBottomOf="@+id/itemCarListLocationIcon"
+        android:text="São Paulo/SP"
         tools:text="São Paulo/SP"
         />
 

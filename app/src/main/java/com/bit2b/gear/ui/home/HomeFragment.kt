@@ -36,15 +36,13 @@ class HomeFragment : Fragment() {
             textView.text = it
         }
 
-        binding.cardBanner
-            .findViewById<ConstraintLayout>(R.id.searchCard)
-            ?.setOnClickListener {
+        binding.includeCardHome.searchCard.setOnClickListener {
             navigateToSearchActivity()
         }
         return root
     }
 
-    fun navigateToSearchActivity(){
+    private fun navigateToSearchActivity(){
         val action = HomeFragmentDirections.actionNavigationHomeToSearchListActivity()
         findNavController().navigate(action)
     }

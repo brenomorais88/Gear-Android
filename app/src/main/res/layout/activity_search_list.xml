@@ -30,6 +30,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/backButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:text="Resultado Pesquisa"
         tools:text="Resultado Pesquisa"
         />
 
@@ -43,6 +44,7 @@
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@+id/backButton"
         app:layout_constraintStart_toStartOf="parent"
+        android:text="23 resultados encontrados"
         tools:text="23 resultados encontrados"
         />
 
@@ -73,12 +75,12 @@
         />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchListRV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="25dp"
         android:orientation="vertical"
-        android:dividerHeight="15dp"
-        app:spanCount="23"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/filterText"
         tools:listitem="@layout/item_car_list"
         />
