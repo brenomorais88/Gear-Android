@@ -31,6 +31,6 @@
         android:id="@+id/searchListActivity"
         android:name="com.bit2b.gear.ui.search.SearchListActivity"
         android:label="SearchListActivity"
-        tools:layout="@layout/activity_search_list"
+        tools:layout="@layout/fragment_search_list"
         />
 </navigation>

@@ -1,88 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="25dp"
-    android:paddingStart="25dp"
-    android:paddingEnd="25dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_color_f6f6f7_round"
-        android:padding="12dp"
-        app:srcCompat="@drawable/ic_chevron_left"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/titleSearchResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="@+id/backButton"
-        app:layout_constraintBottom_toBottomOf="@+id/backButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Resultado Pesquisa"
-        tools:text="Resultado Pesquisa"
-        />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/foundedResults"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:layout_marginTop="22dp"
-        android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/backButton"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="23 resultados encontrados"
-        tools:text="23 resultados encontrados"
-        />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/ic_filter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/foundedResults"
-        app:layout_constraintTop_toTopOf="@+id/foundedResults"
-        app:layout_constraintBottom_toBottomOf="@+id/foundedResults"
-        app:layout_constraintEnd_toStartOf="@+id/filterText"
-        app:layout_constraintHorizontal_bias="1"
-        app:srcCompat="@drawable/ic_filter"
-        />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/filterText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/color_b70000"
-        android:paddingStart="4dp"
-        android:layout_marginTop="22dp"
-        android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/backButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Filtros"
-        />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/searchListRV"
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_search_list"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="25dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/filterText"
-        tools:listitem="@layout/item_car_list"
-        />
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/search_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
