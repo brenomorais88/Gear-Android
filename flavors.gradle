@@ -6,21 +6,21 @@ android {
         mock {
             versionNameSuffix "-MOCK"
             dimension "normal"
-            buildConfigField "String", "BASE_URL" , "\"http://89.116.186.185:8081\""
+            buildConfigField "String", "BASE_URL" , "\"http://89.116.186.185:8081/api\""
             buildConfigField "Boolean", "IS_MOCK" , "true"
         }
 
         dev {
             versionNameSuffix "-DEV"
             dimension "normal"
-            buildConfigField "String", "BASE_URL" , "\"http://89.116.186.185:8081\""
+            buildConfigField "String", "BASE_URL" , "\"http://89.116.186.185:8081/api\""
             buildConfigField "Boolean", "IS_MOCK" , "false"
         }
 
         prd {
             versionNameSuffix "-PRD"
             dimension "normal"
-            buildConfigField "String", "BASE_URL" , "\"http://89.116.186.185:8081\""
+            buildConfigField "String", "BASE_URL" , "\"http://89.116.186.185:8081/api\""
             buildConfigField "Boolean", "IS_MOCK" , "false"
         }
     }
